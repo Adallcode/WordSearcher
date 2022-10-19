@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mukta', sans-serif;
+    font-size: smaller;
+    background-color: rgba(199, 182, 182, 0.562);
+}
+
+h1{
+    margin: 20px 0 20px 10%;
+   
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+div#result{
+    display: none;
+    margin: 0 10% 20px 10%;
+    justify-content: space-between;
+}
+
+div#result .result-comun{
+    flex-basis: 49%;
+    
+}
+
+div#result .col1{
+    text-align: right;
+    padding-right: 10px;
+}
+
+div#result .result-comun #result-counter{
+    width: 70px;
+    background-color: rgb(150, 107, 107);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    box-shadow: 9px 9px 10px rgb(117, 38, 32);
+    
+}
+
+div#main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+div#main .comun{
+    flex-basis: 48%;
+    
+}
+
+div#main textarea#paragraph{
+    outline: 0;
+    padding: 5px;
+    font-size: 2em;
+    border: 2px solid blue;
+}
+
+div#main div#search-col{
+    padding: 10px;
+    
+}
+
+div#main div#search-col input{
+    outline: 0;
+    padding: 10px;
+    border: 2px solid rgb(49, 47, 47);
+    font-size: 1.5em;
+}
+
+
+button#btt{
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    font-size: 1.5em;
+    border: 0;
+    transition: 1s;
+}
+
+
+button#btt:hover{
+    background-color: rgba(139, 120, 120, 0.712);
+    color: rgb(231, 219, 219);
+}
+
+
+/* Media */
+
+
+@media(max-width: 600px)
+{
+    div#main{
+        flex-direction: column;
+    }
+
+    div#main div#search-col{
+        padding: 10px 10px 10px 0;
+
+    }
+
+    div#main .comun, div#main div#search-col input{
+        width: 75%;
+        
+    }
+}
